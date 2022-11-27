@@ -1,6 +1,6 @@
 # Hospital Management System
 
-DBMS Project under guidance
+DBMS Project under guidance of *Prof. Ashok Singh Sairam, Department of Mathematics, IIT Guwahati*
 
 ### Problem Recognition:
     Healthcare is the most critical aspect of our society, and many health care providers face challenges to offer practical and active services to patients. Considering a multispeciality health care centre, many people enter and exit the centre in a day and maintaining their records safely is tedious. To reduce this type of burdens and to manage the financial, administration and clinical aspects, Health Care Management System came into existence.
@@ -43,4 +43,19 @@ DBMS Project under guidance
       10. Medicine
 
 ### ER Diagram
-    
+![](ERDiagram.png)
+
+### Explanation of ER Diagram:
+    1. The healthcare centre mainly consists of doctors, patients and staff (both medical and non-medical).
+    2. Each doctor is identified by a unique identifying id i.e. doctor id. Each doctor’s name, age, institution, specialization and availability is recorded.
+    3. Each patient is identified by a patient id and their names, gender, department and hostel are recorded.
+    4. Staff is divided into medical and non-medical categories based on their work. Each of both the medical and non-medical staff are given a unique staff id. Their names, age and address are recorded.
+    5. A patient can book an appointment depending on the illness and the availability of the doctor.
+    6. The admin has the access to view the number of appointments and the availability of a doctor.
+    7. A patient can either be recovered or non-recovered and has a unique diagnosis id and illness category.
+    8. A prescription is provided by the assigned doctor to a patient containing a unique prescription id and the medicinal record of the patient.
+    9. There are several medicines available at the hospital. Each medicine is identified by its id, name, manufacturer, cost and expiry date.
+    10. Based on the diagnostic results of the patient and the prescription, a medical report is prepared for the patient.
+    11. Each patient’s medical report is stored in the system as a medical record which is accessible by the admin and the doctor who attended the patient.
+    12. Each patient is assigned to a doctor. A patient can be assigned to several doctors and a doctor can be assigned to several patients.
+
